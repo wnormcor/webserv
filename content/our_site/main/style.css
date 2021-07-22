@@ -1,0 +1,293 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+html, body {
+	font-family: Ubuntu;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(93, 138, 166);
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	height: 7rem;
+	background: rgba(0, 0, 0, .4);
+	justify-content: space-between;
+	align-items:center;
+}
+
+footer {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: 10;
+	bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ol {
+    display: flex;
+	flex-direction: row;
+}
+
+li {
+	list-style-type: none;
+}
+
+main {
+	margin: 7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+button {
+	margin: .5rem 0;
+	transition: 0.7s;
+	color:rgb(239, 241, 243);
+	border:3px solid rgba(0, 0, 0, .1);
+	background: rgb(93, 138, 166);
+	border-radius: 3rem;
+	height: 3rem;
+	width: 10rem;
+}
+
+button:hover {
+	transition: 1s;
+	color: rgb(0, 255, 175);
+	border:3px solid rgb(0, 255, 175);
+	background: rgba(0, 0, 0, .1);
+	cursor: pointer;
+}
+
+.logo {
+	display: flex;
+	color: rgb(0, 255, 175);
+}
+
+.logo_image {
+	height: 5rem;
+}
+
+.logo_image_error {
+	position: relative;
+	top: 2rem;
+	left: -.9rem;
+	transform: rotate(45deg);
+}
+
+.time {
+	display: flex;
+	flex-direction: row;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.name_avatarka{
+	height: 4rem;
+	width: 4rem;
+	border-radius: 100%;
+	border: 1px solid white;
+	box-shadow: 0 0 2px white;
+	padding: 0;
+	margin: 0;
+}
+
+.name_text {
+	color: rgb(239, 241, 243);
+	padding: 0;
+	margin: 0;
+}
+
+.link {
+	height: 3rem;
+	margin: 1rem;
+}
+
+.images {
+	height: 50rem;
+	width: 50rem;
+}
+
+.talk {
+	display: flex;
+	flex-direction: column;
+}
+
+.talk_window {
+	background-size: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.talk_chat {
+	position: relative;
+	bottom: -1.5rem;
+	width: 30rem;
+	margin: 1rem;
+	padding: 1rem;
+	border:3px solid rgba(0, 0, 0, .1);
+}
+
+
+.talk_dbiss {
+	margin: .5rem 5rem .5rem .5rem;
+	border-radius: 0rem 1rem 1rem 1rem;
+}
+
+.talk_user {
+	margin: .5rem .5rem .5rem 5rem;
+	border-radius: 1rem 0rem 1rem 1rem;
+}
+
+.input {
+	height: 1rem;
+	width: 50rem;
+	padding: 1rem;
+	background-color: rgb(239, 241, 243);
+	border-radius: .5rem;
+	border: rgb(93, 138, 166);
+}
+
+.input:focus {
+	border: rgb(0, 255, 175);
+}
+
+/*---------------------------ERROR-------------------------------------------------------------------*/
+
+.error {
+	position: relative;
+	top: 3rem;
+}
+
+.error_images {
+	z-index: 2;
+	height: 40rem;
+	width: 80rem;
+}
+
+.error_gif {
+	top: 2rem;
+	left: 8.5rem;
+	position: absolute;
+	z-index: 1;
+	height: 35rem;
+	width: 63rem;
+	border-radius: 1rem;
+}
+
+.error_cd {
+	transition: 1s;
+	transform: rotate(-35deg);
+	width: 10rem;
+	position: fixed;
+	top: 9rem;
+	right: -8rem;
+}
+
+.error_cd:hover {
+	transition: 1s;
+	transform: rotate(0deg);
+	width: 10rem;
+	position: fixed;
+	top: 10rem;
+	right: 0.5rem;
+}
+
+.error_cd:active {
+	transition: 3s;
+	transform: rotate(1080deg);
+}
+
+.error_ps {
+	font-size: .6rem;
+}
+
+.error_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.error_name_avatarka {
+	height: 5rem;
+}
+
+/*---------------------------AUTHORIZATION-------------------------------------------------------------*/
+.authorization {
+	display: flex;
+	margin-top: 20vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.authorization_input {
+	width: 15rem;
+	margin: 1rem;
+}
+
+/*---------------------------CHAT----------------------------------------------------------------------*/
+.button_delete {
+	color: rgba(0, 0, 0, .3);
+	position: absolute;
+	bottom: .5rem;
+	left: 1rem;
+	height: 5rem;
+	width: 5rem;
+}
+
+.button_delete:hover {
+	background: rgb(167, 81, 134);
+}
+
+.footer_chat {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.button_chat {
+	height: 3.2rem;
+	border-radius: 0 ;
+	border-radius: 0 .5rem .5rem 0;
+}
+
+.input_chat {
+	border-radius: .5rem 0 0 .5rem;
+}
+
+.vacum {
+	margin: 2.5rem;
+}
