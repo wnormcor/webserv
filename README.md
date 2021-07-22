@@ -5,7 +5,9 @@ HTTP webserver written on C++
 ## Our team
 
 [Dmitry aka wnormcor] (https://profile.intra.42.fr/users/wnormcor)
+
 [Anna aka dbliss] (https://profile.intra.42.fr/users/dbliss)
+
 [Denis aka monie] (https://profile.intra.42.fr/users/monie)
 
 ## Installation
@@ -20,7 +22,7 @@ make
 ./webserv [path_to_serv_conf, e.g. content/serv.conf]
 ```
 
-# Отзывы
+## Reviews
 
 ```bash
 success 125/100
